@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/head_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/head_find_layout" />
+    </LinearLayout>
+
+    <com.hewaiming.MyRecords.view.xListView
+        android:id="@+id/crimeListView"
+        android:layout_below="@+id/head_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"       
+        android:background="#C8E0F4"
+        android:cacheColorHint="#00000000" >
+    </com.hewaiming.MyRecords.view.xListView>
+
+</RelativeLayout>

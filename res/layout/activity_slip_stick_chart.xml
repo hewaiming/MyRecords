@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_actionbar_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StickChartActivity" >
+
+    <RelativeLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/base_actionbar_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_back_charts"
+            android:layout_width="32dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_back_selector"
+            android:textColor="@color/color_bottom_text_press" />
+
+        <TextView
+            android:id="@+id/charts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="title"
+            android:textColor="@color/color_bottom_text_press"
+            android:textSize="22sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <cn.limc.androidcharts.diagram.GridChart
+        android:id="@+id/slipstickchart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/single_chart_height"
+        android:layout_below="@+id/layout_head" />
+
+</RelativeLayout>

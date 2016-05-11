@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Layout_stats_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/header_listview"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_header_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:text="统计名"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btn_chart"   
+        android:visibility="gone"    
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="统计图"
+        android:src="@drawable/stat" />
+
+    <TextView
+        android:id="@+id/tv_header_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="7dp"
+        android:text="total"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</RelativeLayout>

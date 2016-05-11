@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.hewaiming.MyRecords.ui.ShowRecordActivity" >
+
+    <LinearLayout
+        android:id="@+id/show_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height" >
+
+        <include layout="@layout/include_head" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" > 
+
+    <LinearLayout
+        android:id="@+id/show_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            style="@style/Smile.TextView._Gray"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="6dp"
+            android:hint="时间："
+            android:text="time"
+            android:textSize="10.5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/Smile.TextView._Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="20dp"
+                android:text="地址"
+                android:textSize="10.5sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Smile.TextView._Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:text="报道人"
+                android:textSize="10.5sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="10dp"
+            android:minHeight="150dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="content"
+            android:textSize="18sp" />
+    </LinearLayout>
+ </ScrollView>
+</LinearLayout>

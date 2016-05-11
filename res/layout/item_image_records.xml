@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            style="@style/Smile.ImageView.Photo_Large"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/descr_image"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_toRightOf="@id/iv_photo"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text="当事人"
+            android:textSize="12.5sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_photo"
+            android:ellipsize="end"      
+            android:paddingTop="4.0dip"    
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:maxLines="2"
+            android:text="I am chinese man,I like world,beijing is china capitacl,many people live in large city,Shanghai,Guangzhou,Shenzhou etc"
+            android:textColor="#000003"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_above="@id/tv_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="10dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="1.0dip"
+            android:singleLine="true"
+            android:text="chengdu"
+            android:textColor="#00000f"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/Smile.TextView._Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_below="@id/tv_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/iv_photo"
+            android:textSize="10.0sp" 
+            android:text="2016-03-29" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_below="@id/tv_content"
+             android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="19dp"
+            android:layout_toRightOf="@+id/tv_date"
+            android:textSize="10.0sp" 
+            android:text="12:36" />
+
+        <TextView
+            android:id="@+id/tv_unread"
+            android:layout_width="16dip"
+            android:layout_height="16.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_content"
+            android:layout_marginRight="10dp"
+             android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/tv_time"
+            android:background="@drawable/list_newmessage2"
+            android:gravity="center"
+            android:textColor="#ffffffff"            
+            android:textSize="10.0dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+</RelativeLayout>

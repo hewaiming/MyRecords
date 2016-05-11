@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">多媒体记录本</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="label_camera_btn">取景</string>
+    <string name="lable_takePicture_btn">照相</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="txt_newRecord">写记录</string>
+    <string name="txt_records">记录</string>
+    <string name="txt_stats">统计</string>
+    <string name="txt_data">日期</string>
+    <string name="txt_input_date">请选择日期</string>
+    <string name="txt_input_time">时间</string>
+    <string name="txt_time">时间</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <string name="title_activity_show_record">ShowRecordActivity</string>
+    <string name="descr_image">图片</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_hint">输入模糊查询内容</string>
+    <string name="search_btn_text">查找</string>
+    <string name="title_activity_pie">PieActivity</string>
+
+</resources>
