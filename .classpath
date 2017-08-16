@@ -9,5 +9,7 @@
 	<classpathentry kind="lib" path="libs/photoview-library-1.2.2.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="libs/mpandroidchartlibrary-2-2-4.jar"/>
+	<classpathentry kind="lib" path="/android-support-v7-appcompat-r23-2-1/libs/android-support-v4.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

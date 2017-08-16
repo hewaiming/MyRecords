@@ -1,6 +1,6 @@
 package com.hewaiming.MyRecords.charts;
 
-import android.support.v7.app.ActionBarActivity;
+
 
 import java.util.ArrayList;
 import java.util.List;
